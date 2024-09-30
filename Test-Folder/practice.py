@@ -1,6 +1,8 @@
-from PIL import Image, ImageFilter
+def shipping_order(**cons):
+    for key, value in cons.items():
+        print(f"{key}: {value}")
 
-img = Image.open("./Pokedex")
-filtered_img = img.convert("L")
-filtered_img.save(img)
-filtered_img.show()
+
+shipping_order(sony="PS4",
+               microsoft="XBOX1",
+               nintendo="NSWITCH")
